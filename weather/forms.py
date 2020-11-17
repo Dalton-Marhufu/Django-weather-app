@@ -1,6 +1,7 @@
 from django.forms import ModelForm, TextInput
 from .models import City
 
+#Creating form from model
 class CityForm(ModelForm):
     class Meta:
         model = City
