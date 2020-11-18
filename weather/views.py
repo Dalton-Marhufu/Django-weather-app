@@ -49,6 +49,7 @@ def index(request):
             'temperature' : r['main']['temp'],
             'temperature_min' : r['main']['temp_min'],
             'temperature_max' : r['main']['temp_max'],
+            'humidity' : r['main']['humidity'],
             'description' : r['weather'][0]['description'],
             'icon' : r['weather'][0]['icon'],
             }

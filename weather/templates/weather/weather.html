@@ -57,11 +57,13 @@
                                     <p>
                                         <span class="title">{{ city_weather.city }}</span>
                                         <br>
-                                        <span class="subtitle"> Main tempreture {{ city_weather.temperature }}° C</span>
+                                        <span class="subtitle"> Mean tempreture {{ city_weather.temperature }}° C</span>
                                         <br>
-                                        <span class="subtitle"> Minimum tempreture {{ city_weather.temperature_min }}° C today</span>>
+                                        <span class="subtitle"> Minimum tempreture {{ city_weather.temperature_min }}° C today</span>
                                         <br>
                                         <span class="subtitle"> Maximum tempreture {{ city_weather.temperature_max }}° C today</span>
+                                        <br>
+                                        <span class="subtitle"> The humidity is {{ city_weather.humidity }}% today</span>
                                         <br>
                                         {{ city_weather.description }}
                                     </p>
@@ -75,6 +77,11 @@
   </div>
 </section>
 <footer class="footer">
+  <div class="content has-text-centered">
+  <p>
+    <strong>Today's Weather</strong> by <a href="https://github.com/Dalton-Marhufu">Dalton Marhufu</a>.
+  </p>
+</div>
 </footer>
 </body>
 
