@@ -32,7 +32,7 @@ def index(request):
     form = CityForm()
 
     #Data base query to return all cities
-    cities = City.objects.all()
+    cities = City.objects.order_by('-date_posted')
 
     #Creating a dictionary list
     weather_data = []
